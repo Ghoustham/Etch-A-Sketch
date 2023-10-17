@@ -29,6 +29,19 @@ const createSquares = (num)=> {
 
 createSquares(num);
 
-// Create a function that when i hover the squares they changes the color of their background 
+// Create a function that when i hover the squares they changes the color of his background 
 
 
+function activePen(){
+    const squareSelector  = document.querySelectorAll('.squares')
+    
+    squareSelector.forEach(square => {
+        square.addEventListener('mouseenter',()=>{
+            square.style.backgroundColor = 'red';
+        })
+        
+    });
+}
+
+
+activePen();
