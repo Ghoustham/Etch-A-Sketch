@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;    
+    float: right;
+    box-sizing: content-box;
+    margin-top: 1vh;
+    margin-right: 5vw;
+    width: 49vw;
+    height: 49vw;
+}
+
+.squares { 
+    border: solid 1px red;
+}
+/*Now I need to apply a hover effect, i can use the javascript function or i can use css functionality*/
+
