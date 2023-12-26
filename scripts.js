@@ -13,7 +13,7 @@ const playerNumber = ()=> {
 
 createAboard();
 
-const buttonOnClick = document.querySelector('.buttonmenu');
+const buttonOnClick = document.querySelector('.buttonmenu');    
     
 buttonOnClick.addEventListener('click', () => {
     
@@ -56,7 +56,7 @@ function activePen(){
     
     squareSelector.forEach(square => {
         square.addEventListener('mouseenter',()=>{
-            square.style.backgroundColor = 'red';
+            square.style.backgroundColor = `rgb(${randomNumber(255)},${randomNumber(255)}, ${randomNumber(255)})`;
         })
         
     });
@@ -72,10 +72,13 @@ function createAboard(){
 
     createNewButton.textContent = 'Generate Grid';
     
-    menuSelector.appendChild(createNewButton);
-
-
-    
+    menuSelector.appendChild(createNewButton);    
 }
+
+function randomNumber (maxNumber){
+    return Math.floor(Math.random()* maxNumber);
+}
+
+
 
 
